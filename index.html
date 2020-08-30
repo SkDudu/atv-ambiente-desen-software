@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <title>Testes em javascript</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+      <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Expires" content="0">
+      <link rel="stylesheet" href="/css/style.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="/js/numeroprimo.js"></script>
+      <script src="js/MostrarConteudo.js"></script>
+      <script src="js/MostrarConteudoSomatorio.js"></script>
+      <script src="js/somarValores.js"></script>
+      <script src="js/fibonacci.js"></script>
+      <script src="js/MostrarConteudoFibonacci.js"></script>
+      <script src="js/MDC.js"></script>
+      <script src="js/MostrarConteudoMDC.js"></script>
+      <script src="js/ordena.js"></script>
+      <script src="js/MostrarConteudoQuickShort.js"></script>
+      <script src="js/contagem.js"></script>
+      <script src="js/MostrarConteudoContagem.js"></script>
+</head>
+<body>
+      <h1>Teste em Javascript</h1>
+      <button type="button" onclick="MudarConteudoPrimos('MostrarConteudo')">Numero Primo</button>
+      <div id="MostrarConteudo">
+            <div id="NumeroPrimo">
+                  <label for="">Número para teste:</label>
+                  <input id="num" type="number" /> 
+                  <button onclick="primo()">Verificar</button><br />
+                  <label for=""><div id="resposta"></div></label>
+            </div> 
+      </div> 
+      <button type="button" onclick="MudarConteudoSomatorio('MostrarConteudoSomatorio')">Somatório</button>
+      <div id="MostrarConteudoSomatorio">
+            <div id="Somatorio">
+                  <label for="">Primeiro número</label>
+                  <input id="num2" type="number">
+                  <label for="">Segundo número</label>
+                  <input id="num3" type="number">
+                  <button id="somar" onclick="somarValores()">Somar</button><br/>
+                  <label for=""><div id="respostaSoma"></div></label>
+            </div>
+      </div>
+      <button type="button" onclick="MudarConteudoFibonacci('MostrarConteudoFibonacci')">Fibonacci</button>
+      <div id="MostrarConteudoFibonacci">
+            <div id="Fibonacci">
+                  <label for=""><div id="ResFibo"></div></label>
+            </div>
+      </div>
+      <button type="button" onclick="MudarConteudoMDC('MostrarConteudoMDC')">Máximo Divisor Comum</button>
+      <div id="MostrarConteudoMDC">
+            <div id="mdc">
+                  <label for="">Primeiro número</label>
+                  <input id="num4" type="number">
+                  <label for="">Segundo número</label>
+                  <input id="num5" type="number">
+                  <input type="submit" onclick="mdc()">
+            </div>
+      </div>
+      <button type="button" onclick="MudarConteudoQuickShort('MostrarConteudoQuickShort')">Organizar lista</button>
+      <div id="MostrarConteudoQuickShort">
+            <div id="quickshort">
+                  <label>Insira sua lista:</label>
+                  <input type="number" id="lista">
+                  <button onclick="quickshort()">Organizar</button>
+            </div>
+      </div>
+      <button type="button" onclick="MudarConteudoContagem('MostrarConteudoContagem')">Contagem</button>
+      <div id="MostrarConteudoContagem">
+            <div id="contagem">
+                  <label>Insira o primeiro numero:</label>
+                  <input type="number" id="a">
+                  <label>Insira o segundo numero:</label>
+                  <input type="number" id="b">
+                  <button onclick="contagem()">Contar</button>
+                  <label><div id="contagem"></div></label>
+            </div>
+      </div>
+</body>
+</html>
